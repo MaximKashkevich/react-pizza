@@ -1,5 +1,5 @@
 import Header from "../Header";
-import BasketCard from "./basketCard";
+import BasketCard from "./BasketCard";
 
 import { useDispatch, useSelector } from "react-redux";
 import { clearItems } from "../../redux/slices/cardSlice";

@@ -33,7 +33,7 @@ export default function App() {
   // const [sortType, setSortType] = useState({
   //   name: "популярности", // значения по умолчанию
   //   sortProperty: "rating",
-  // });
+  // })
   const [searchValue, setSearchValue] = useState("");
 
   const navigate = useNavigate();
