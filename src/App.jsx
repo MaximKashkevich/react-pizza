@@ -11,8 +11,8 @@ import Card from "./components/CardPizza";
 import BasketGeneral from "./components/basket/BasketGeneral";
 import BasketEmpty from "./components/basket/BasketEmpty";
 
-import Skeleton from "./components/Skeleton"; // Импортируем Skeleton
-import Pagination from "./components/Pagination"; // Импортируем новый компонент пагинации
+import Skeleton from "./components/Skeleton";
+import Pagination from "./components/Pagination";
 
 import { useSelector, useDispatch } from "react-redux";
 import { setFilterIndex, setFilters } from "./redux/slices/filterSlice";
