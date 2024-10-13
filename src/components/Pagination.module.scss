@@ -1,0 +1,72 @@
+// src/components/Pagination.module.scss
+
+.root {
+  margin-top: 30px;
+  display: flex; // Сделать родительский элемент флекс-контейнером
+  justify-content: center; // Центрируем элементы
+  flex-wrap: wrap; // Позволяет элементам переноситься на новую строку
+
+  li {
+    display: inline;
+
+    a {
+      // общие стили ссылки
+      color: rgb(235, 51, 51);
+      cursor: pointer;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      margin-right: 20px;
+      text-align: center;
+      padding: 10px 20px;
+      border: 1px solid rgb(235, 51, 51);
+      border-radius: 30px;
+      transition: 0.3s; // Плавная анимация
+
+      &:hover,
+      &.active {
+        // Добавление class 'active' чтобы имитировать hover
+        background: rgb(235, 51, 51);
+        color: white;
+      }
+    }
+  }
+
+  :global {
+    .selected {
+      // выбираем стиль для активного элемента
+      a {
+        background: rgb(235, 51, 51);
+        color: white;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    // Мобильные стили
+    li {
+      a {
+        width: 35px; // Уменьшить ширину кнопок на мобильных устройствах
+        height: 35px; // Уменьшить высоту кнопок на мобильных устройствах
+        margin-right: 10px; // Уменьшить расстояние между кнопками
+        padding: 15px;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    // Очень маленькие экраны
+    margin-top: 20px;
+
+    li {
+      a {
+        width: 100px; // Дальнейшее уменьшение ширины
+        height: 50px; // Дальнейшее уменьшение высоты
+        margin-right: 5px; // Уменьшить расстояние между кнопками
+        padding: 10px;
+        font-size: 0.8rem; // Уменьшить размер текста
+      }
+    }
+  }
+}
