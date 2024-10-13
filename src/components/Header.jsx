@@ -15,11 +15,7 @@ export default function Header() {
       <header className="flex flex-col md:flex-row items-center justify-between mx-4 md:mx-12 pt-4 md:pt-6">
         <section className="flex items-center mb-4">
           <Link to="/">
-            <img
-              src="/public/assets/HeaderLogo.png"
-              alt="HeaderLogo"
-              className="h-10"
-            />
+            <img src="/public/assets/HeaderLogo.png" alt="HeaderLogo" />
           </Link>
           <nav className="ml-3">
             <h1 className="tracking-[1%] text-2xl font-extrabold leading-7">
