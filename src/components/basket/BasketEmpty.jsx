@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import Header from "../Header";
 
 export default function BasketEmpty() {
   return (
     <>
       <main className="items-center  bg-white w-[95%] rounded-xl pb-12 my-12 m-auto h-full">
-        <header className="mx-[50px] pt-[50px]">
+        {/* <header className="mx-[50px] pt-[50px]">
           <section className="flex items-center mb-4">
             <Link to="/">
               <img
@@ -22,7 +23,8 @@ export default function BasketEmpty() {
               </p>
             </nav>
           </section>
-        </header>
+        </header> */}
+        <Header />
         <div className="border border-b mt-10"></div>
         <main className="flex flex-col items-center justify-center gap-10 mt-20 text-center">
           <h1 className="text-[32px] font-bold leading-[38.98px] tracking-[1%]">

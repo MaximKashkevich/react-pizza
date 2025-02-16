@@ -91,9 +91,13 @@ export default function Card({ id, imageUrl, title, types, sizes, price }) {
                 </svg>
               </a>
               <span className="mx-2">Добавить</span>
-              <span className="bg-orange-600 rounded-[50px] py-1 px-3 text-white font-bold">
-                {count}
-              </span>
+              {count ? (
+                <>
+                  <span className="bg-orange-600 rounded-[50px] py-1 px-3 text-white font-bold">
+                    {count}
+                  </span>
+                </>
+              ) : null}
             </button>
           </div>
         </nav>
